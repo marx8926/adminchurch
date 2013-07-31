@@ -1,0 +1,76 @@
+-# app/views/layouts/application.html.haml
+
+-# Jam in a flash[:notice] so that we can see the flash rendering in effect
+-# flash[:notice] = "This is a test"
+-#!!!
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+    %title= content_for?(:title) ? yield(:title) : "AdminChurch"
+    %meta{:content => content_for?(:description) ? yield(:description) : "AdminChuch", :name => "description"}
+    = stylesheet_link_tag :application, :media => "all"
+    = javascript_include_tag :application
+    = csrf_meta_tags
+    = yield(:head)
+  %body
+   
+    #main{:role => "main"}
+      .container
+        .content
+          .row
+            .span12
+              = render 'layouts/messages'
+              = yield
+          %footer
+            #footer.clearfix
+  .container
+    %hr
+      #footer-wrapper
+        .row-fluid
+          .span12
+            .span6
+              %ul#menu-footer.footer-menu
+                %li#menu-item-20.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-20
+                  %a{:href => "http://clmdevelopers.com/sitemap/"} Sitemap
+                %li#menu-item-10.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-10
+                  %a{:href => "http://clmdevelopers.com/contacto/"} Contactanos
+            / end of col-460
+            .span6
+              .social-icons
+                %a{:href => "http://twitter.com"}
+                  %i.icon-twitter-sign
+                %a{:href => "http://facebook.com"}
+                  %i.icon-facebook-sign
+                %a{:href => "http://pinterest.com"}
+                  %i.icon-pinterest-sign
+                %a{:href => "http://linkedin.com"}
+                  %i.icon-linkedin-sign
+                %a{:href => "http://google.com+"}
+                  %i.icon-google-plus-sign
+                %a{:href => "http://github.com"}
+                  %i.icon-github-sign
+                %a{:href => "http://rss.com"}
+                  %i.icon-rss
+              / end of .social-icons
+            / end of col-460 fit
+          .row-fluid
+            .span5.copyright
+              \&copy; 2013
+              %a{:href => "http://adminchurh.com/demo/", :title => "Adminchurch Demo"}
+                Adminchurch Demo
+            / end copyright
+            .span2.scroll-top
+              %a{:href => "#scroll-top", :title => ""}
+                
+            .span5.powered
+              %a{:href => "http://strappress.com", :title => "AdminChurch"}
+                AdminChurch
+              desarrollado por
+              %a{:href => "http://clmdevelopers.com", :title => "CLM Developers"}
+                CLM Developers
+            / end .powered
+        / end of col-940
+  / end #footer-wrapper
+/ end #footer
+
+           

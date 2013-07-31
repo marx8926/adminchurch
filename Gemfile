@@ -46,3 +46,7 @@ end
 
 gem 'rails_12factor'
 gem 'haml'
+gem 'haml-rails'
+gem 'haml-contrib'
+gem 'RedCloth'
+gem 'bootstrap-sass'
