@@ -1,45 +1,144 @@
--# app/views/home/index.html.haml
-%head
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.brand{:href => "../"} AdminChurch
+      #main-menu.nav-collapse.collapse
+        %ul#main-menu-left.nav
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Ganar
+              %b.caret
+            %ul#swatch-menu.dropdown-menu
+              %li
+                %a{:href => "../default/"} Registrar
+              %li
+                %a{:href=>''} Buscar
+              %li.divider
+              %li
+                %a{:href => "../amelia/"} Informes
+              %li.divider
+              %li
+                %a{:href=> ""} Dashboard
+              %li.divider
+              %li
+                %a{:href=>""}Administrar
+              %li
+                %a{:href=>""}Lugar
+              %li
+                %a{:href=>""}Estado Civil
+              %li
+                %a{:href=>""}Edades
+             
+          %li#preview-menu.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Consolidar
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "bootstrap.min.css", :target => "_blank"} bootstrap.min.css
+              %li
+                %a{:href => "bootstrap.css", :target => "_blank"} bootstrap.css
+              %li.divider
+              %li
+                %a{:href => "variables.less", :target => "_blank"} variables.less
+              %li
+                %a{:href => "bootswatch.less", :target => "_blank"} bootswatch.less
 
+          %li#preview-menu.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Discipular
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "bootstrap.min.css", :target => "_blank"} bootstrap.min.css
+              %li
+                %a{:href => "bootstrap.css", :target => "_blank"} bootstrap.css
+              %li.divider
+              %li
+                %a{:href => "variables.less", :target => "_blank"} variables.less
+              %li
+                %a{:href => "bootswatch.less", :target => "_blank"} bootswatch.less
 
-:css
-	body{
-		padding-top: 40px;
-		padding-bottom: 40px;
-		background-color: #f5f5f5;
-		}
-	.form-signin {
-		max-width: 300px;
-		padding: 19px 29px 29px;
-		margin: 0 auto 20px;
-		background-color: #fff;
-		border: 1px solid #e5e5e5;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-		border-radius: 5px;
-		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
-		box-shadow: 0 1px 2px rgba(0,0,0,.05);
-		}
-	.form-signin .form-signin-heading,
-	.form-signin .checkbox{
-		margin-bottom: 10px;
-		}
-	.form-signin input[type="text"]
-	.form-signin input[type="password"]{
-		font-size: 16px;
-		height: auto;
-		margin-bottom: 15px;
-		padding: 7px 9px;
-		}
+          %li#preview-menu.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Enviar
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "bootstrap.min.css", :target => "_blank"} bootstrap.min.css
+              %li
+                %a{:href => "bootstrap.css", :target => "_blank"} bootstrap.css
+              %li.divider
+              %li
+                %a{:href => "variables.less", :target => "_blank"} variables.less
+              %li
+                %a{:href => "bootswatch.less", :target => "_blank"} bootswatch.less
 
+          %li#preview-menu.dropdown
+            %a.dropdown-toggle{"data-toggle"=>"dropdown", :href =>"#"}
+              Contabilidad
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href=>"#"}
+                Primero
 
-
-%div{ :class=>'container'}
-	%form{ :class=>'form-signin'}
-		%h2{ :class=>'form-signin-heading'} Por favor ingrese
-		%input{ :type=>'text', :class=>'input-block-level', :placeholder=>'Email'}
-		%input{ :type=>'password', :class=>'input-block-level', :placeholder=>'Password'}
-		%label{ :class=>'checkbox'}
-		%input{ :type=>'checkbox', :value=>'remember-me'} Recordar
-		%button{ :class=>"btn btn-large btn-primary", :type=>'submit'} Ingresar
+          %li#preview-menu.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Más
+              %b.caret
+            %ul.dropdown-menu
+              
+              %li
+                %a{:href => "#"}
+                  Pedir
+                %ul.dropdown-menu.sub-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+              %li
+                %a{:href => "#"}
+                  Eventos
+                %ul.dropdown-menu.sub-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+              %li
+                %a{:href => "#"}
+                  secretaria
+                %ul.dropdown-menu.sub-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+              %li
+                %a{:href => "#"}
+                  Comunicar
+                %ul.dropdown-menu.sub-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+              %li
+                %a{:href => "#"}
+                  Administrar
+                %ul.dropdown-menu.sub-menu
+                  %li
+                    %a{:href => "#"} Action
+                  %li
+                    %a{:href => "#"} Another action
+              
+        %ul#main-menu-right.nav.pull-right
+          %li
+            %a{:href => "https://wrapbootstrap.com/?ref=bsw", :onclick => "_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);", :rel => "tooltip", :target => "_blank", :title => "Marketplace for premium Bootstrap templates"}
+              %i.icon-user
+          %li
+            %a{:href => "https://wrapbootstrap.com/?ref=bsw", :onclick => "_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);", :rel => "tooltip", :target => "_blank", :title => "Marketplace for premium Bootstrap templates"}
+              Salir
+              %i.icon-off
