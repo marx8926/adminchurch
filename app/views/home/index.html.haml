@@ -1,7 +1,7 @@
 .navbar.navbar-fixed-top
   .navbar-inner
     .container
-      %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+      %a.btn2.btn2-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
@@ -136,9 +136,9 @@
               
         %ul#main-menu-right.nav.pull-right
           %li
-            %a{:href => "https://wrapbootstrap.com/?ref=bsw", :onclick => "_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);", :rel => "tooltip", :target => "_blank", :title => "Marketplace for premium Bootstrap templates"}
+            %a{:href => "https://wrapbootstrap.com/?ref=bsw", :onclick => "_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);", :rel => "tooltip", :target => "_blank"}
+              
               %i.icon-user
           %li
-            %a{:href => "https://wrapbootstrap.com/?ref=bsw", :onclick => "_gaq.push(['_trackEvent', 'click', 'outbound', 'wrapbootstrap']);", :rel => "tooltip", :target => "_blank", :title => "Marketplace for premium Bootstrap templates"}
-              Salir
-              %i.icon-off
+            %a{:href => ""}
+              = link_to('Salir', destroy_user_session_path)          
