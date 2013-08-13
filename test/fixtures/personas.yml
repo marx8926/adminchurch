@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombres: MyString
+  apellidos: MyString
+  edad: 1
+  nacimiento: 2013-08-12
+  dni: MyString
+  ocupacion: MyString
+  profesion: MyString
+  estado: MyString
+  dia: MyString
+  hora: 2013-08-12 17:47:25
+  invitado: MyString
+  direccion: MyString
+  referencia: MyString
+  longitud: 
+  latitud: 
+  conversion: 2013-08-12
+
+two:
+  nombres: MyString
+  apellidos: MyString
+  edad: 1
+  nacimiento: 2013-08-12
+  dni: MyString
+  ocupacion: MyString
+  profesion: MyString
+  estado: MyString
+  dia: MyString
+  hora: 2013-08-12 17:47:25
+  invitado: MyString
+  direccion: MyString
+  referencia: MyString
+  longitud: 
+  latitud: 
+  conversion: 2013-08-12

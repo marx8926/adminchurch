@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  codigo: MyString
+  anfitrion: MyString
+  creacion: 2013-08-12
+  tipo: 1
+  direccion: MyString
+  referencia: MyString
+  latitud: 1.5
+  longitud: 1.5
+  activo: false
+
+two:
+  codigo: MyString
+  anfitrion: MyString
+  creacion: 2013-08-12
+  tipo: 1
+  direccion: MyString
+  referencia: MyString
+  latitud: 1.5
+  longitud: 1.5
+  activo: false

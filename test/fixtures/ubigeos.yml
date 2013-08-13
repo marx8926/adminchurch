@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  departamento: MyString
+  provincia: MyString
+  distrito: MyString
+  coddepartamento: 1
+  codprovincia: 1
+  coddristito: 1
+  latitud: 
+  longitud: 
+
+two:
+  departamento: MyString
+  provincia: MyString
+  distrito: MyString
+  coddepartamento: 1
+  codprovincia: 1
+  coddristito: 1
+  latitud: 
+  longitud: 

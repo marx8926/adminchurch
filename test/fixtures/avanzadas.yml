@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  direccion: MyString
+  referencia: MyString
+  fecha_creacion: 2013-08-12
+  cant_miembros: 1
+  cant_conv: 1
+  cant_bautiz: 1
+
+two:
+  direccion: MyString
+  referencia: MyString
+  fecha_creacion: 2013-08-12
+  cant_miembros: 1
+  cant_conv: 1
+  cant_bautiz: 1
